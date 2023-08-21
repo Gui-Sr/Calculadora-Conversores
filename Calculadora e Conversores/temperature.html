@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/7ca743346d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./files/css/style.css"/>
+    <link rel="stylesheet" href="./files/css/style_dark.css"/>
+    <link rel="stylesheet" href="./files/css/converters.css"/>
+    <link rel="icon" type="image/png" href="./files/img/temperature.png"/>
+    <title>Conversor de Temperaturas</title>
+</head>
+
+<body class="body-light" id="body">
+
+   <!-- Menu -->
+    <div class="wrapper" id="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <ul class="links">
+                    <li> <a href="index.html"><i class="fas fa-calculator"></i>  Calculadora</a></li>
+                    <li>
+                        <a href="" class="desktop-link"><i class="fas fa-ruler-horizontal"></i>  Conversores <i class="fas fa-angle-down"></i></a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Conversores <i class="fas fa-angle-down"></i></label>
+                        <ul id="dropdown">
+                            <li><a href="temperature.html"><i class="fas fa-thermometer-half"></i><span class="text-submenu">Temperatura</span></a></li>
+                            <li><a href="distance.html"><i class="fas fa-road"></i><span class="text-submenu">Distância</span></a></li>
+                            <li><a href="coin.html"><i class="fas fa-coins"></i><span class="text-submenu">Moedas</span></a></li>
+                        </ul>
+                      </li>
+                    <li>
+                        <a href="" class="desktop-link static-button"><i class="fa-solid fa-gear"></i>  Aparência <i class="fas fa-angle-down theme-check"></i></a>
+                        <input type="checkbox" id="show-features1">
+                        <label for="show-features1">Aparência <i class="fas fa-angle-down"></i></label>
+                        <ul class="appearance-menu">
+                            <li><button onclick="darkTheme()" class="theme"><i class="fas fa-moon"></i>
+                                <div class="text-dark">Tema Escuro <i id="check-dark" class="fas # theme-check"></i></div></button>
+                            </li>
+                            <li><button onclick="lightTheme()" class="theme"><i class="fas fa-sun"></i>
+                                <div class="text-dark">Tema Claro <i id="check-light" class="fas fa-check theme-check"></i></div></button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Menu -->
+
+    <!-- Temperaturas -->
+    <div class="container-inputs">
+        <p class="titles">Celcius</p>
+        <div class="input-field">
+            <i class="fas fa-thermometer-half"></i>
+            <input type="number" name="celcius" id="celcius" class="input" placeholder="0 °C">
+        </div>
+        <p class="titles">Fahrenheit</p>
+        <div class="input-field">
+            <i class="fas fa-thermometer-half"></i>
+            <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="0 °F">
+        </div>
+        <p class="titles">Kelvin</p>
+        <div class="input-field">
+            <i class="fas fa-thermometer-half"></i>
+            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="0 °K">
+        </div>
+        <p class="titles">Rankine</p>
+        <div class="input-field">
+            <i class="fas fa-thermometer-half"></i>
+            <input type="number" name="rankine" id="rankine" class="input" placeholder="0 °R">
+        </div>
+        <p class="titles">Réaumur</p>
+        <div class="input-field">
+            <i class="fas fa-thermometer-half"></i>
+            <input type="number" name="reaumur" id="reaumur" class="input" placeholder="0 °Ré">
+        </div>
+    </div>
+    <!-- Temperaturas -->
+
+    <script src="./files/js/temperature.js"></script>
+    <script src="./files/js/theme.js"></script>
+
+</body>
+</html>
