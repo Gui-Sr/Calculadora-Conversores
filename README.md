@@ -4,4 +4,4 @@ Esste projeto tem como funcionalidade uma calculadora totalmente funcional e con
 
 Para acessar o site <a href="https://calculadora-conversores.netlify.app/">clique aqui!</a>
 
-<video src="https://github.com/Gui-Sr/Calculadora-Conversores/assets/83707061/9ba32a73-05e4-4144-8b15-a8bab0d4a84f">
+https://github.com/Gui-Sr/Calculadora-Conversores/assets/83707061/9ba32a73-05e4-4144-8b15-a8bab0d4a84f
